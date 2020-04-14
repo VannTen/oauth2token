@@ -5,7 +5,7 @@ import pickle
 import argparse
 import os
 from google.auth.transport.requests import Request
-from app_creds import get_json_config, get_credentials_file
+from .app_creds import get_json_config, get_credentials_file
 
 
 def create_user_credentials(app=None, user=None, **kwargs): 

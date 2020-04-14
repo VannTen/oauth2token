@@ -25,4 +25,8 @@ setuptools.setup(
         'bin/oauth2get'
     ],
     python_requires='>=3.6',
+    install_requires=[
+        'google_auth_oauthlib',
+        'pyxdg'
+    ]
 )
