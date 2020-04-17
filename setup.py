@@ -5,12 +5,12 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name="oauth2token",
-    version="0.0.1",
+    version="0.0.1-1",
     author="Max Gautier",
     author_email="ashelia1000@gmail.com",
     description="Oauth2 token management for cli applications",
     long_description=long_description,
-    long_description_content_type="text/rst",
+    long_description_content_type="text/x-rst",
     url="https://github.com/VannTen/oauth2token",
     packages=setuptools.find_packages(where='.'),
     classifiers=[
