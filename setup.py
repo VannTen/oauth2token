@@ -5,8 +5,8 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name="oauth2token",
-    version="0.0.1-2",
-    author="Max Gautier",
+    version="0.0.1-3",
+    author="VannTen",
     author_email="ashelia1000@gmail.com",
     description="Oauth2 token management for cli applications",
     long_description=long_description,
