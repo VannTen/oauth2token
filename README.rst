@@ -9,7 +9,7 @@ Configuration
 -----------------------
 
 You need to create :code:`config.json` and :code:`scopes.json` at
-:code:`$XDG_CONFIG_HOME/<provider>/` for each provider you want
+:code:`$XDG_CONFIG_HOME/oauth2token/<provider>/` for each provider you want
 to use.
 :code:`config.json` :
 
@@ -35,7 +35,8 @@ Usage
 
 :code:`oauth2create` <provider> <account>
 
-Obtain and store credentials in `$XDG_DATA_HOME/<provider>/<account>` in binary
+Obtain and store credentials in
+`$XDG_DATA_HOME/oauth2token/<provider>/<account>` in binary
 form, using the configuration for that provider. It use the "Installed App flow"
 open a brower where you'll need to log in the account you want to use, then
 redirect to the loopback address to obtain the credentials.
