@@ -15,7 +15,10 @@ def create_user_credentials(app=None, user=None, **kwargs):
 
     flow.run_local_server(port=0)
 
-    pickle.dump(flow.credentials, get_credentials_file(app=app, user=user, override=True))
+    creds = flow.credentials
+    creds._scopes = flow.oauth2session.token["scope"]
+
+    pickle.dump(creds, get_credentials_file(app=app, user=user, override=True))
 
 def get_token(**kwargs):
     with get_credentials_file(**kwargs) as user_file:
