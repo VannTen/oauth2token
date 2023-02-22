@@ -8,12 +8,12 @@ from google.auth.transport.requests import Request
 from .app_creds import get_json_config, get_credentials_file
 
 
-def create_user_credentials(app=None, user=None, **kwargs): 
+def create_user_credentials(app=None, user=None, port=0, **kwargs):
     flow = InstalledAppFlow.from_client_config(
             *get_json_config(app=app)
        )
 
-    flow.run_local_server(port=0)
+    flow.run_local_server(port=port)
 
     creds = flow.credentials
     creds._scopes = flow.oauth2session.token["scope"]

@@ -7,5 +7,6 @@ from oauth2token.token_mgmt import create_user_credentials
 parser = argparse.ArgumentParser()
 parser.add_argument('app')
 parser.add_argument('user', default=os.getenv('USER'))
+parser.add_argument('-p', '--port', default=0, help="Port to listen on")
 args = parser.parse_args()
-create_user_credentials(user=args.user, app=args.app)
+create_user_credentials(user=args.user, app=args.app, port=int(args.port))
