@@ -1,2 +1,2 @@
-google_auth_oauthlib
+google_auth_oauthlib==0.5.2
 pyxdg
