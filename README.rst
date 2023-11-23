@@ -2,6 +2,12 @@
 # Oauth2token #
 ###############
 
+Unmaintained
+------------
+I no longer maintain this, since I don't have any use for it anymore.
+Feel free to fork if you need o/.
+
+
 Simple cli tools to create and use oauth2token
 
 
